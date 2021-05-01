@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  width: 100%;
+}
+path {
+  pointer-events: fill;
+}
+
+path:hover {
+  fill: red;
+}
+
+.section {
+  min-height: 100vh;
+}
