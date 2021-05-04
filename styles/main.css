@@ -1,18 +1,165 @@
+body {
+  margin: 0;
+  font-family: Bookmania, Tablet Gothic;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  box-shadow: 0 0 1px 1px black;
+  text-align: left;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 30pt;
+  padding: 10px;
+  font-family: Bookmania;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  font-size: 20pt;
+  font-family: Bookmania;
+  font-weight: normal;
+  padding: 10px;
+}
+
+p {
+  font-family: Tablet Gothic;
+  font-size: 15pt;
+  padding: 10px;
 }
 
 svg {
   width: 100%;
 }
+
 path {
   pointer-events: fill;
 }
 
 path:hover {
-  fill: red;
+  fill: #663d59;
+}
+
+footer {
+  background-color: #b65357;
+  margin: 0;
+  padding: 0;
 }
 
 .section {
-  min-height: 100vh;
+  margin: auto;
+}
+
+.nav-primary {
+  min-height: 30px;
+}
+
+.nav-h1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-img {
+  width: 100%;
+  height: 150px;
+  background-image: url("../images/canyonlands.jpg");
+  position: relative;
+  background-position: -30px;
+  background-size: 100% auto;
+  z-index: -1;
+}
+
+.svg-inst {
+  position: relative;
+  align-content: center;
+}
+
+.instructions {
+  position: absolute;
+  padding: 20px;
+  margin: 0;
+  color: black;
+}
+
+.parks-list {
+  background-color: black;
+  padding: 10px;
+}
+
+.accordion {
+  background-color: #b65357;
+  margin: 20px;
+  padding: 10px;
+}
+
+.park {
+  background-color: #663d59;
+  margin: 0;
+  cursor: pointer;
+}
+
+.description {
+  background-color: white;
+  padding: 5px;
+  display: none;
+  transition: ease;
+}
+
+.active,
+.park:hover {
+  background-color: #707070;
+}
+
+.back {
+  box-shadow: black;
+  margin-bottom: 5px;
+  font-family: Tablet Gothic;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.footer-text {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (min-width: 767px) {
+  .svg-inst {
+    position: static;
+  }
+
+  .instructions {
+    position: static;
+  }
+
+  .nav-img {
+    background-position: -0px;
+  }
+
+  .nav-h1 {
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+  }
 }
