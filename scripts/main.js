@@ -27,17 +27,16 @@ map.forEach((back) => {
 });
 
 // state dropdown menu
-let selects = document.querySelectorAll("option");
+let selects = document.querySelector("#states");
 
 // takes user to state section
 function navigateToState(e) {
     console.log(e.target.value);
+    window.location.hash = e.target.value
 }
 
 // listen for when selection from dropdown is changed
-selects.forEach((option) => {
-    option.addEventListener("change", navigateToState)
-});
+selects.addEventListener("change", navigateToState);
 
 // take user to nps site when button is clicked
 document.getElementById("nps").onclick = function () {
