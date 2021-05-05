@@ -13,17 +13,36 @@ states.forEach((state) => {
 });
 
 // bring user back to map from state <div>s
-// only issue here is the function only works after the user has clicked a state- otherwise the button goes nowhere
+// find all h3 elements
 let map = document.querySelectorAll("h3");
 
+// function takes user back to top
 function backToMap(e) {
-    console.log(e.target.dataset.name);
-    window.location.hash = e.target.dataset.name
+    window.scrollTo(0, 0);
 }
 
+// listen for "back to map" buttons to be clicked
 map.forEach((back) => {
     back.addEventListener("click", backToMap)
 });
+
+// state dropdown menu
+let selects = document.querySelectorAll("option");
+
+// takes user to state section
+function navigateToState(e) {
+    console.log(e.target.value);
+}
+
+// listen for when selection from dropdown is changed
+selects.forEach((option) => {
+    option.addEventListener("change", navigateToState)
+});
+
+// take user to nps site when button is clicked
+document.getElementById("nps").onclick = function () {
+  location.href = "https://www.nps.gov/index.htm";
+};
 
 
 // create a function to open accordion panels when park name is clicked

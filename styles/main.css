@@ -13,7 +13,7 @@ img {
 
 button {
   width: 100%;
-  box-shadow: 0 0 1px 1px black;
+  box-shadow: 0 0 1px 1px #707070;
   text-align: left;
 }
 
@@ -42,6 +42,7 @@ p {
 
 svg {
   width: 100%;
+  margin-top: 65px;
 }
 
 path {
@@ -64,6 +65,7 @@ footer {
 
 .nav-primary {
   min-height: 30px;
+  box-shadow: 0 0 2px 2px #707070;
 }
 
 .nav-h1 {
@@ -89,8 +91,10 @@ footer {
 .instructions {
   position: absolute;
   padding: 20px;
-  margin: 0;
+  margin-top: 50px;
   color: black;
+  max-width: 180px;
+  font-family: Tablet Gothic;
 }
 
 .parks-list {
@@ -99,7 +103,7 @@ footer {
 }
 
 .accordion {
-  background-color: #b65357;
+  /* background-color: #b65357; */
   margin: 20px;
   padding: 10px;
 }
@@ -114,7 +118,7 @@ footer {
   background-color: white;
   padding: 5px;
   display: none;
-  transition: ease;
+  transition: smooth;
 }
 
 .active,
@@ -123,11 +127,12 @@ footer {
 }
 
 .back {
-  box-shadow: black;
+  box-shadow: #707070;
   margin-bottom: 5px;
   font-family: Tablet Gothic;
   font-size: 10pt;
   text-align: center;
+  color: #b65357;
 }
 
 .grid-container {
@@ -144,15 +149,177 @@ footer {
   font-size: 15px;
 }
 
+.dropdown {
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  font-family: Tablet Gothic;
+  z-index: 1;
+}
+
+.more-info {
+  margin-top: 10px;
+}
+
+.learn-more {
+  padding: 0px;
+  font-family: Tablet Gothic;
+  font-weight: bold;
+  font-size: 20pt;
+  color: #b65357;
+  text-align: center;
+}
+
+.footer {
+  box-shadow: 0 0 1px 1px #707070;
+}
+
+.white-background {
+  color: #663d59;
+}
+
+.alaska {
+  background-image: url("../images/denali.jpg");
+  background-size: auto 100%;
+}
+
+.arizona {
+  background-image: url("../images/grandcanyon.jpg");
+  background-size: auto 100%;
+}
+
+.arkansas {
+  background-image: url("../images/hotsprings.jpg");
+  background-size: auto 100%;
+}
+
+.california {
+  background-image: url("../images/channelislands.jpg");
+  background-size: auto 100%;
+}
+
+.colorado {
+  background-image: url("../images/blackcanyon.jpg");
+  background-size: auto 100%;
+}
+
+.florida {
+  background-image: url("../images/biscayne.jpg");
+  background-size: auto 100%;
+}
+
+.hawaii {
+  background-image: url("../images/haleakala.jpg");
+  background-size: auto 100%;
+}
+
+.kentucky {
+  background-image: url("../images/mammothcave.jpg");
+  background-size: auto 100%;
+}
+
+.indiana {
+  background-image: url("../images/indianadunes.jpg");
+  background-size: auto 100%;
+}
+
+.maine {
+  background-image: url("../images/acadia.jpg");
+  background-size: auto 100%;
+}
+
+.michigan {
+  background-image: url("../images/isleroyale.jpg");
+  background-size: auto 100%;
+}
+
+.minnesota {
+  background-image: url("../images/voyageurs.jpg");
+  background-size: auto 100%;
+}
+
+.missouri {
+  background-image: url("../images/gatewayarch.jpg");
+  background-size: auto 100%;
+}
+
+.montana {
+  background-image: url("../images/glacier.jpg");
+  background-size: auto 100%;
+}
+
+.nevada {
+  background-image: url("../images/greatbasin.jpg");
+  background-size: auto 100%;
+}
+
+.new-mexico {
+  background-image: url("../images/carlsbadcaverns.jpg");
+  background-size: auto 100%;
+}
+
+.north-dakota {
+  background-image: url("../images/theodoreroosevelt.jpg");
+  background-size: auto 100%;
+}
+
+.north-carolina {
+  background-image: url("../images/greatsmokymountains.jpg");
+  background-size: auto 100%;
+}
+
+.ohio {
+  background-image: url("../images/cuyahogavalley.jpg");
+  background-size: auto 100%;
+}
+
+.oregon {
+  background-image: url("../images/craterlake.jpg");
+  background-size: auto 100%;
+}
+
+.south-carolina {
+  background-image: url("../images/congaree.jpg");
+  background-size: auto 100%;
+}
+
+.south-dakota {
+  background-image: url("../images/badlands.jpg");
+  background-size: auto 100%;
+}
+
+.texas {
+  background-image: url("../images/bigbend.jpg");
+  background-size: auto 100%;
+}
+
+.utah {
+  background-image: url("../images/arches.jpg");
+  background-size: auto 100%;
+}
+
+.virginia {
+  background-image: url("../images/shenandoah.jpg");
+  background-size: auto 100%;
+}
+
+.washington {
+  background-image: url("../images/mtrainier.jpg");
+  background-size: auto 100%;
+}
+
+.west-virginia {
+  background-image: url("../images/newrivergorge.jpg");
+  background-size: auto 100%;
+}
+
+.wyoming {
+  background-image: url("../images/grandteton.jpg");
+  background-size: auto 100%;
+}
+
 @media (min-width: 767px) {
-  .svg-inst {
-    position: static;
-  }
-
-  .instructions {
-    position: static;
-  }
-
   .nav-img {
     background-position: -0px;
   }
@@ -161,5 +328,169 @@ footer {
     position: absolute;
     z-index: 1;
     padding: 20px;
+  }
+
+  .accordion {
+    background-color: #b65357;
+    margin: 80px auto;
+    padding: 40px;
+    max-width: 600px;
+  }
+
+  svg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .park {
+    max-height: 90px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .more-info {
+    margin-top: 30px;
+  }
+
+  .alaska {
+    background-image: url("../images/denali.jpg");
+    background-size: 100% auto;
+  }
+
+  .arizona {
+    background-image: url("../images/grandcanyon.jpg");
+    background-size: auto 100%;
+  }
+
+  .arkansas {
+    background-image: url("../images/hotsprings.jpg");
+    background-size: 100% auto;
+  }
+
+  .california {
+    background-image: url("../images/channelislands.jpg");
+    background-size: 100% auto;
+  }
+
+  .colorado {
+    background-image: url("../images/blackcanyon.jpg");
+    background-size: 100% auto;
+  }
+
+  .florida {
+    background-image: url("../images/biscayne.jpg");
+    background-size: auto 100%;
+  }
+
+  .hawaii {
+    background-image: url("../images/haleakala.jpg");
+    background-size: auto 100%;
+  }
+
+  .kentucky {
+    background-image: url("../images/mammothcave.jpg");
+    background-size: 100% auto;
+  }
+
+  .indiana {
+    background-image: url("../images/indianadunes.jpg");
+    background-size: 100% auto;
+  }
+
+  .maine {
+    background-image: url("../images/acadia.jpg");
+    background-size: 100% auto;
+  }
+
+  .michigan {
+    background-image: url("../images/isleroyale.jpg");
+    background-size: 100% auto;
+  }
+
+  .minnesota {
+    background-image: url("../images/voyageurs.jpg");
+    background-size: 100% auto;
+  }
+
+  .missouri {
+    background-image: url("../images/gatewayarch.jpg");
+    background-size: 100% auto;
+  }
+
+  .montana {
+    background-image: url("../images/glacier.jpg");
+    background-size: 100% auto;
+  }
+
+  .nevada {
+    background-image: url("../images/greatbasin.jpg");
+    background-size: 100% auto;
+  }
+
+  .new-mexico {
+    background-image: url("../images/carlsbadcaverns.jpg");
+    background-size: 100% auto;
+  }
+
+  .north-dakota {
+    background-image: url("../images/theodoreroosevelt.jpg");
+    background-size: 100% auto;
+  }
+
+  .north-carolina {
+    background-image: url("../images/greatsmokymountains.jpg");
+    background-size: 100% auto;
+  }
+
+  .ohio {
+    background-image: url("../images/cuyahogavalley.jpg");
+    background-size: 100% auto;
+  }
+
+  .oregon {
+    background-image: url("../images/craterlake.jpg");
+    background-size: 100% auto;
+  }
+
+  .south-carolina {
+    background-image: url("../images/congaree.jpg");
+    background-size: 100% auto;
+  }
+
+  .south-dakota {
+    background-image: url("../images/badlands.jpg");
+    background-size: 100% auto;
+  }
+
+  .texas {
+    background-image: url("../images/bigbend.jpg");
+    background-size: auto 100%;
+  }
+
+  .utah {
+    background-image: url("../images/arches.jpg");
+    background-size: 100% auto;
+  }
+
+  .virginia {
+    background-image: url("../images/shenandoah.jpg");
+    background-size: 100% auto;
+  }
+
+  .washington {
+    background-image: url("../images/mtrainier.jpg");
+    background-size: auto 100%;
+  }
+
+  .west-virginia {
+    background-image: url("../images/newrivergorge.jpg");
+    background-size: 100% auto;
+  }
+
+  .wyoming {
+    background-image: url("../images/grandteton.jpg");
+    background-size: 100% auto;
   }
 }

@@ -14,7 +14,40 @@
       <div class="nav-img"></div>
     </div>
     <div class="svg-inst">
-      <h2 class="instructions">Select a State to Begin</h2>
+      <div>
+        <h2 class="instructions">Select a state or pick from the dropdown list to begin</h2>
+        <select class="dropdown" name="Select a state" id="states">
+          <option value="" disabled selected>All</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="California">California</option>
+          <option value="Colorado">Colorado</option>
+          <option value="Florida">Florida</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Maine">Maine</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Minnesota">Minnesota</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Montana">Montana</option>
+          <option value="Nevada">Nevada</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="North Dakota">North Dakota</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Oregon">Oregon</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="South Dakota">South Dakota</option>
+          <option value="Texas">Texas</option>
+          <option value="Utah">Utah</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Washington">Washington</option>
+          <option value="West Virginia">West Virginia</option>
+          <option value="Wyoming">Wyoming</option>
+        </select>
+      </div>
       <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" enable_background="new 0 0 1000 589" height="589px" pretty_print="False" style="stroke-linejoin: round; stroke:#000; fill: none;" version="1.1" viewBox="0 0 1000 589" width="1000px" id="svg" inkscape:version="0.48.4 r9939" sodipodi:docname="us.svg">
         <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1137" id="namedview69" showgrid="false" inkscape:zoom="0.80893016" inkscape:cx="817.66365" inkscape:cy="409.3738" inkscape:window-x="1192" inkscape:window-y="118" inkscape:window-maximized="1" inkscape:current-layer="svg2"/>
         <defs id="defs4">
@@ -89,9 +122,12 @@
       </svg>
     </div>
     <div class="parks-list">
+      <button id="nps" class="more-info">
+        <h2 class="learn-more">Learn more at NPS.GOV</h2>
+      </button>
       <div id="Alaska" class="section">
-        <div class="accordion">
-          <h1>Alaska</h1>
+        <div class="accordion alaska">
+          <h1 class="white-background">Alaska</h1>
           <button class="park">
             <h2>Denali National Park</h2>
           </button>
@@ -146,8 +182,8 @@
         </div>
       </div>
       <div id="Arizona" class="section">
-        <div class="accordion">
-          <h1>Arizona</h1>
+        <div class="accordion arizona">
+          <h1 class="white-background">Arizona</h1>
           <button class="park">
             <h2>Grand Canyon National Park</h2>
           </button>
@@ -172,7 +208,7 @@
         </div>
       </div>
       <div id="Arkansas" class="section">
-        <div class="accordion">
+        <div class="accordion arkansas">
           <h1>Arkansas</h1>
           <button class="park">
             <h2>Hot Springs National Park</h2>
@@ -186,7 +222,7 @@
         </div>
       </div>
       <div id="California" class="section">
-        <div class="accordion">
+        <div class="accordion california">
           <h1>California</h1>
           <button class="park">
             <h2>Channel Islands National Park</h2>
@@ -242,8 +278,8 @@
         </div>
       </div>
       <div id="Colorado" class="section">
-        <div class="accordion">
-          <h1>Colorado</h1>
+        <div class="accordion colorado">
+          <h1 class="white-background">Colorado</h1>
           <button class="park">
             <h2>Black Canyon of the Gunnison National Park</h2>
           </button>
@@ -274,7 +310,7 @@
         </div>
       </div>
       <div id="Florida" class="section">
-        <div class="accordion">
+        <div class="accordion florida">
           <h1>Florida</h1>
           <button class="park">
             <h2>Biscayne National Park</h2>
@@ -300,7 +336,7 @@
         </div>
       </div>
       <div id="Hawaii" class="section">
-        <div class="accordion">
+        <div class="accordion hawaii">
           <h1>Hawaii</h1>
           <button class="park">
             <h2>Haleakalā National Park</h2>
@@ -320,7 +356,7 @@
         </div>
       </div>
       <div id="Kentucky" class="section">
-        <div class="accordion">
+        <div class="accordion kentucky">
           <h1>Kentucky</h1>
           <button class="park">
             <h2>Mammoth Cave National Park</h2>
@@ -334,8 +370,8 @@
         </div>
       </div>
       <div id="Indiana" class="section">
-        <div class="accordion">
-          <h1>Indiana</h1>
+        <div class="accordion indiana">
+          <h1 class="white-background">Indiana</h1>
           <button class="park">
             <h2>Indiana Dunes National Park</h2>
           </button>
@@ -348,8 +384,8 @@
         </div>
       </div>
       <div id="Maine" class="section">
-        <div class="accordion">
-          <h1>Maine</h1>
+        <div class="accordion maine">
+          <h1 class="white-background">Maine</h1>
           <button class="park">
             <h2>Acadia National Park</h2>
           </button>
@@ -362,7 +398,7 @@
         </div>
       </div>
       <div id="Michigan" class="section">
-        <div class="accordion">
+        <div class="accordion michigan">
           <h1>Michigan</h1>
           <button class="park">
             <h2>Isle Royale National Park</h2>
@@ -376,7 +412,7 @@
         </div>
       </div>
       <div id="Minnesota" class="section">
-        <div class="accordion">
+        <div class="accordion minnesota">
           <h1>Minnesota</h1>
           <button class="park">
             <h2>Voyageurs National Park</h2>
@@ -390,7 +426,7 @@
         </div>
       </div>
       <div id="Missouri" class="section">
-        <div class="accordion">
+        <div class="accordion missouri">
           <h1>Missouri</h1>
           <button class="park">
             <h2>Gateway Arch National Park</h2>
@@ -404,8 +440,8 @@
         </div>
       </div>
       <div id="Montana" class="section">
-        <div class="accordion">
-          <h1>Montana</h1>
+        <div class="accordion montana">
+          <h1 class="white-background">Montana</h1>
           <button class="park">
             <h2>Glacier National Park</h2>
           </button>
@@ -418,8 +454,8 @@
         </div>
       </div>
       <div id="Nevada" class="section">
-        <div class="accordion">
-          <h1>Nevada</h1>
+        <div class="accordion nevada">
+          <h1 class="white-background">Nevada</h1>
           <button class="park">
             <h2>Great Basin National Park</h2>
           </button>
@@ -432,7 +468,7 @@
         </div>
       </div>
       <div id="New Mexico" class="section">
-        <div class="accordion">
+        <div class="accordion new-mexico">
           <h1>New Mexico</h1>
           <button class="park">
             <h2>Carlsbad Caverns National Park</h2>
@@ -452,7 +488,7 @@
         </div>
       </div>
       <div id="North Dakota" class="section">
-        <div class="accordion">
+        <div class="accordion north-dakota">
           <h1>North Dakota</h1>
           <button class="park">
             <h2>Theodore Roosevelt National Park</h2>
@@ -466,8 +502,8 @@
         </div>
       </div>
       <div id="North Carolina" class="section">
-        <div class="accordion">
-          <h1>North Carolina</h1>
+        <div class="accordion north-carolina">
+          <h1 class="white-background">North Carolina</h1>
           <button class="park">
             <h2>Great Smoky Mountains National Park</h2>
           </button>
@@ -480,7 +516,7 @@
         </div>
       </div>
       <div id="Ohio" class="section">
-        <div class="accordion">
+        <div class="accordion ohio">
           <h1>Ohio</h1>
           <button class="park">
             <h2>Cuyahoga Valley National Park</h2>
@@ -494,8 +530,8 @@
         </div>
       </div>
       <div id="Oregon" class="section">
-        <div class="accordion">
-          <h1>Oregon</h1>
+        <div class="accordion oregon">
+          <h1 class="white-background">Oregon</h1>
           <button class="park">
             <h2>Crater Lake National Park</h2>
           </button>
@@ -508,8 +544,8 @@
         </div>
       </div>
       <div id="South Carolina" class="section">
-        <div class="accordion">
-          <h1>South Carolina</h1>
+        <div class="accordion south-carolina">
+          <h1 class="white-background">South Carolina</h1>
           <button class="park">
             <h2>Congaree National Park</h2>
           </button>
@@ -522,8 +558,8 @@
         </div>
       </div>
       <div id="South Dakota" class="section">
-        <div class="accordion">
-          <h1>South Dakota</h1>
+        <div class="accordion south-dakota">
+          <h1 class="white-background">South Dakota</h1>
           <button class="park">
             <h2>Badlands National Park</h2>
           </button>
@@ -542,8 +578,8 @@
         </div>
       </div>
       <div id="Texas" class="section">
-        <div class="accordion">
-          <h1>Texas</h1>
+        <div class="accordion texas">
+          <h1 class="white-background">Texas</h1>
           <button class="park">
             <h2>Big Bend National Park</h2>
           </button>
@@ -562,8 +598,8 @@
         </div>
       </div>
       <div id="Utah" class="section">
-        <div class="accordion">
-          <h1>Utah</h1>
+        <div class="accordion utah">
+          <h1 class="white-background">Utah</h1>
           <button class="park">
             <h2>Arches National Park</h2>
           </button>
@@ -600,8 +636,8 @@
         </div>
       </div>
       <div id="Virginia" class="section">
-        <div class="accordion">
-          <h1>Virginia</h1>
+        <div class="accordion virginia">
+          <h1 class="white-background">Virginia</h1>
           <button class="park">
             <h2>Shenandoah National Park</h2>
           </button>
@@ -614,8 +650,8 @@
         </div>
       </div>
       <div id="Washington" class="section">
-        <div class="accordion">
-          <h1>Washington</h1>
+        <div class="accordion washington">
+          <h1 class="white-background">Washington</h1>
           <button class="park">
             <h2>Mount Rainier National Park</h2>
           </button>
@@ -640,8 +676,8 @@
         </div>
       </div>
       <div id="West Virginia" class="section">
-        <div class="accordion">
-          <h1>West Virginia</h1>
+        <div class="accordion west-virginia">
+          <h1 class="white-background">West Virginia</h1>
           <button class="park">
             <h2>New River Gorge National Park</h2>
           </button>
@@ -654,7 +690,7 @@
         </div>
       </div>
       <div id="Wyoming" class="section">
-        <div class="accordion">
+        <div class="accordion wyoming">
           <h1>Wyoming</h1>
           <button class="park">
             <h2>Grand Teton National Park</h2>
@@ -674,8 +710,7 @@
         </div>
       </div>
     </div>
-    <img src="./images/snowymountains.jpg" alt="mountains">
-    <footer>
+    <footer class="footer">
       <div class="grid-container">
         <div>
           <h2>© US National Parks</h2>
@@ -686,6 +721,9 @@
       </div>
       <h2 class="footer-text">
         All park descriptions from www.nps.gov
+      </h2>
+      <h2 class="footer-text">
+        All images from unsplash.com
       </h2>
     </footer>
 </body>
