@@ -56,11 +56,11 @@ for (i = 0; i < acc.length; i++) {
       this.classList.toggle("active");
 
     // for the active panel- if it is visible, close it; if not, open it
-      var description = this.nextElementSibling;
-      if (description.style.display === "block") {
-        description.style.display = "none";
-      } else {
-        description.style.display = "block";
-      }
+      // var description = this.nextElementSibling;
+      // if (description.style.display === "block") {
+      //   description.style.display = "none";
+      // } else {
+      //   description.style.display = "block";
+      // }
   });
 }

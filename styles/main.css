@@ -83,6 +83,10 @@ footer {
   z-index: -1;
 }
 
+.park.active + .description {
+  display: block;
+}
+
 .svg-inst {
   position: relative;
   align-content: center;
